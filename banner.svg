@@ -1,0 +1,136 @@
+<svg width="1200" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1">
+        <animate attributeName="stop-color" values="#667eea;#764ba2;#667eea" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1">
+        <animate attributeName="stop-color" values="#764ba2;#667eea;#764ba2" dur="4s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#4facfe;stop-opacity:0.3" />
+    </linearGradient>
+    
+    <clipPath id="circleClip">
+      <circle cx="200" cy="150" r="80"/>
+    </clipPath>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#grad1)"/>
+  
+  <!-- Animated circles -->
+  <circle cx="100" cy="50" r="30" fill="#ffffff" opacity="0.1">
+    <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1100" cy="250" r="40" fill="#ffffff" opacity="0.1">
+    <animate attributeName="r" values="40;45;40" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="950" cy="80" r="25" fill="#ffffff" opacity="0.1">
+    <animate attributeName="r" values="25;30;25" dur="3.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.1;0.2;0.1" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Profile circle border with animation -->
+  <circle cx="200" cy="150" r="85" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.8" filter="url(#glow)">
+    <animate attributeName="stroke-dasharray" values="0,535;535,535;0,535" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="200" cy="150" r="90" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.4">
+    <animate attributeName="r" values="90;95;90" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Photo placeholder - User will add their photo -->
+  <circle cx="200" cy="150" r="80" fill="#2d3748"/>
+  <image href="/images/imagem-20do-20whatsapp-20de-202025-05-18-20-c3-a0-28s-29-2008.jpg" 
+         x="120" y="70" width="160" height="160" 
+         clip-path="url(#circleClip)"
+         preserveAspectRatio="xMidYMid slice"/>
+  
+  <!-- Decorative lines -->
+  <line x1="320" y1="120" x2="480" y2="120" stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <animate attributeName="x2" values="480;520;480" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <line x1="320" y1="180" x2="450" y2="180" stroke="#ffffff" stroke-width="2" opacity="0.6">
+    <animate attributeName="x2" values="450;490;450" dur="2.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Main text -->
+  <text x="320" y="100" font-family="'Segoe UI', Arial, sans-serif" font-size="48" font-weight="bold" fill="#ffffff" filter="url(#glow)">
+    Mayko Fiel
+  </text>
+  
+  <text x="320" y="145" font-family="'Segoe UI', Arial, sans-serif" font-size="24" fill="#ffffff" opacity="0.9">
+    Desenvolvedor Java Júnior
+  </text>
+  
+  <text x="320" y="175" font-family="'Segoe UI', Arial, sans-serif" font-size="18" fill="#ffffff" opacity="0.8">
+    Back-End Developer | Engenharia de Software
+  </text>
+  
+  <!-- Code brackets animation -->
+  <text x="320" y="220" font-family="'Courier New', monospace" font-size="20" fill="#ffffff" opacity="0.7">
+    <tspan>&lt;</tspan>
+    <tspan fill="#4ade80">code</tspan>
+    <tspan>&gt;</tspan>
+  </text>
+  
+  <text x="320" y="245" font-family="'Courier New', monospace" font-size="16" fill="#a5f3fc" opacity="0.8">
+    Java • OOP • Git • Clean Code
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+  </text>
+  
+  <text x="320" y="270" font-family="'Courier New', monospace" font-size="20" fill="#ffffff" opacity="0.7">
+    <tspan>&lt;/</tspan>
+    <tspan fill="#4ade80">code</tspan>
+    <tspan>&gt;</tspan>
+  </text>
+  
+  <!-- Tech icons (simplified) -->
+  <g transform="translate(900, 100)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffffff" opacity="0.15">
+      <animate attributeName="y" values="0;-10;0" dur="2s" repeatCount="indefinite"/>
+    </rect>
+    <text x="30" y="40" font-size="30" text-anchor="middle" fill="#ffffff">☕</text>
+  </g>
+  
+  <g transform="translate(980, 100)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffffff" opacity="0.15">
+      <animate attributeName="y" values="0;-10;0" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="30" y="40" font-size="30" text-anchor="middle" fill="#ffffff">💻</text>
+  </g>
+  
+  <g transform="translate(1060, 100)">
+    <rect x="0" y="0" width="60" height="60" rx="10" fill="#ffffff" opacity="0.15">
+      <animate attributeName="y" values="0;-10;0" dur="2s" begin="0.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="30" y="40" font-size="30" text-anchor="middle" fill="#ffffff">🚀</text>
+  </g>
+  
+  <!-- Bottom wave decoration -->
+  <path d="M0,280 Q300,260 600,280 T1200,280 L1200,300 L0,300 Z" fill="url(#grad2)">
+    <animate attributeName="d" 
+             values="M0,280 Q300,260 600,280 T1200,280 L1200,300 L0,300 Z;
+                     M0,280 Q300,300 600,280 T1200,280 L1200,300 L0,300 Z;
+                     M0,280 Q300,260 600,280 T1200,280 L1200,300 L0,300 Z" 
+             dur="5s" 
+             repeatCount="indefinite"/>
+  </path>
+</svg>
