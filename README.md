@@ -77,6 +77,7 @@ Combinando essas áreas, desenvolvo uma abordagem que une **tecnologia e gestão
 
 ## ✨ Inspiração
 <div align="center">
+<div align="center">
 
 ![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:7957d5&height=220&section=header&text=Mayko%20Fiel&fontSize=60&fontColor=ffffff&animation=twinkling&fontAlignY=35&desc=Java%20Developer%20%7C%20Back-End%20%7C%20Problem%20Solver&descSize=20&descAlignY=55&descAlign=50)
 
@@ -171,6 +172,5 @@ Combinando essas áreas, desenvolvo uma abordagem que une **tecnologia e gestão
 <div align="center">
 
 ## ✨ Inspiração
-"Everybody in this country should learn to program a computer, because it teaches you how to think." — Steve Jobs
+"Everybody in this country should learn to program a computer, because it teaches you how to think." - Steve Jobs.
 
-</div>
